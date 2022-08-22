@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daum 로그인</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <img src="img_Daum/logo.png" alt="Daum 로고" />
+      </header>
+
+      <main id="main">
+        <table id="loginTbl">
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <a href="#">
+                  <img src="img_Daum/ico_Other.png" alt="" width="17" />
+                  다른 방법으로 로그인
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="inputAccount">
+                <input type="text" placeholder="아이디" id="inputID" />
+                <span id="IDreset">&times;</span>
+                <p id="warningID">아이디를 입력해주세요.</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="inputAccount">
+                <input type="password" placeholder="비밀번호" id="inputPW" />
+                <span id="PWreset">&times;</span>
+                <p id="warningPW">비밀번호를 입력해주세요.</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button type="button" id="btnLogin">로그인</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="loginSetArea stay">
+                <input type="checkbox" id="loginStayChk" />
+                <label for="loginStayChk" id="loginStay">
+                  로그인 상태 유지
+                </label>
+              </td>
+              <td class="loginSetArea">
+                <span>IP보안</span>
+                <img src="img_Daum/ico_ON.png" alt="보안 작동중" width="24" />
+                <img
+                  src="img_Daum/ico_OFF.png"
+                  alt="보안 미작동"
+                  width="32"
+                  id="img_off"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="stayTab">
+                <div id="stayTriangle"></div>
+                <div id="stayWarning">
+                  개인정보 보호를 위해, 개인 기기에서만 사용해 주세요.
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" id="findAccount">
+                <span>아이디 찾기</span>
+                <span>|</span>
+                <span>비밀번호 찾기</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <img
+                  src="img_Daum/bnr_login.jpg"
+                  alt="계정통합 이미지"
+                  width="420"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <!-- main#main -->
+
+      <footer id="footer">
+        <hr />
+        <div id="footerInfo">
+          <span>&copy; Kakao Corp.</span>
+          <span>|</span>
+          <span>고객센터</span>
+        </div>
+      </footer>
+    </div>
+    <!-- div#wrap -->
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

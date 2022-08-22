@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+    width: 700px;
+    /* border: 1px solid #000; */
+    padding-bottom: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+
+}
+
+
+/* header#header 시작 */
+div#wrap>header#header {
+    text-align: center;
+    /* border: 1px solid #000; */
+    margin-top: 57px;
+}
+
+#wrap>#header>img {
+    width: 140px;
+    margin-bottom: 50px;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+}
+
+/* header#header 끝 */
+
+
+
+/*/////////////////// main#main 시작 ///////////////////*/
+
+main#main {
+    /* border: 1px solid #000; */
+    margin-bottom: 40px;
+    display: flex;
+}
+
+main#main>table#loginTbl {
+    width: 420px;
+    /* border: 1px solid #000; */
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: -25px;
+}
+
+/* #main>#loginTbl td {
+    border: 1px solid #000;
+} */
+
+/*/////// 다른 방법 로그인 ///////*/
+#main>#loginTbl tr:first-child>td {
+    text-align: right;
+    padding: 7px 0;
+}
+
+#main>#loginTbl tr:first-child>td>a {
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+    user-select: none;
+}
+#main>#loginTbl tr:first-child>td>a>img {
+    position: relative;
+    top: 2px;
+}
+/*/////// 아이디, 비밀번호 입력 ///////*/
+#main>#loginTbl .inputAccount {
+    padding: 3.5px 0;
+    /* border: 1px solid #f00; */
+    position: relative;
+}
+
+#main>#loginTbl .inputAccount>input {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 12px;
+    border: 1px solid #cfcfcf;
+    user-select: none;
+    
+}
+#main>#loginTbl .inputAccount>input:focus {
+    outline: 1px solid #4c87ee;
+    background-color: rgba(76, 135, 238, 0.03);
+}
+
+
+#main>#loginTbl .inputAccount span#IDreset{
+    margin-right: -5px;
+    padding: 2px 7px;
+    background-color: #d2d2d2;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 18px;
+    left: 380px;
+    cursor: pointer;
+    display: none;
+}
+#main>#loginTbl .inputAccount span#PWreset{
+    margin-right: -5px;
+    padding: 2px 7px;
+    background-color: #d2d2d2;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 18px;
+    left: 380px;
+    cursor: pointer;
+    display: none;
+}
+#main>#loginTbl .inputAccount p{
+    font-size: 13px;
+    color: red;
+}
+#main>#loginTbl .inputAccount>p#warningID{
+    display: none;
+}
+#main>#loginTbl .inputAccount>p#warningPW{
+    display: none;
+}
+
+/*/////// 로그인 버튼 ///////*/
+#main>#loginTbl button#btnLogin {
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 12px;
+    border: 1px solid #4c87ee;
+    margin-top: 8px;
+
+    background-color: #4c87ee;
+    cursor: pointer;
+}
+
+/*/////// 로그인 상태 유지 및 IP 보안 ///////*/
+#main>#loginTbl td.loginSetArea:last-child {
+    text-align: right;
+}
+
+#main>#loginTbl td.loginSetArea>input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: translateY(3px);
+}
+
+#main>#loginTbl td.loginSetArea span {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#main>#loginTbl td.loginSetArea span#loginStay{
+    /* border: 1px solid #000; */
+    position: relative;
+    left: 5px;
+}
+#main>#loginTbl td.loginSetArea img:nth-child(2){
+    /* border: 1px solid #000; */
+    position: relative;
+}
+#main>#loginTbl td.loginSetArea img:nth-child(3){
+    position: relative;
+    top: 363px;
+    left: 534px;
+    /* display: none; */
+}
+
+#main>#loginTbl td.stayTab{
+    display: none;
+}
+#main>#loginTbl td.stayTab div#stayTriangle{
+    width: 0;
+    height: 0;
+    border: 1px solid #ddd;
+    border-bottom: 10px solid #ddd;
+    border-top: 0px solid transparent;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: relative;
+    top: 6px;
+    left: 60px;
+    z-index: 1;
+}
+#main>#loginTbl td.stayTab div#stayWarning{
+    margin: 5px 0 0 0;
+    padding: 7px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+#main>#loginTbl td.loginSetArea {
+    padding-top: 8px;
+}
+
+#main>#loginTbl td.loginSetArea img {
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+}
+
+/*/////// ID, 비밀번호 찾기 ///////*/
+#main>#loginTbl td#findAccount {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 86px;
+}
+
+#main>#loginTbl td#findAccount span:not(:nth-child(2)) {
+    color: #555;
+    cursor: pointer;
+}
+
+#main>#loginTbl td#findAccount span:nth-child(2) {
+    color: #ddd;
+    margin: 16px;
+}
+
+#main>#loginTbl tr:last-child img {
+    cursor: pointer;
+}
+
+/*/////////////////// main#main 끝 ///////////////////*/
+
+
+
+/* footer#footer 시작 */
+footer#footer {
+    margin-bottom: 60px;
+
+}
+
+footer#footer>hr {
+    border-top: 1px solid #ddd;
+}
+
+#footer>div#footerInfo {
+    text-align: center;
+    padding-top: 6px;
+}
+
+#footer>div#footerInfo span {
+    /* color: #ddd; */
+    font-size: 12px;
+}
+
+#footer>div#footerInfo span:not(:nth-child(2)) {
+    cursor: pointer;
+}
+
+#footer>div#footerInfo span:not(:nth-child(2)) {
+    color: #666;
+}
+
+#footer>div#footerInfo span:nth-child(2) {
+    color: #ddd;
+    margin: 10px;
+}
+
+/* footer#footer 끝 */
